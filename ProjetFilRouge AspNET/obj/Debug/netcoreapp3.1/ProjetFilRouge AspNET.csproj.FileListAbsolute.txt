@@ -41,3 +41,10 @@ D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.pdb
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.genruntimeconfig.cache
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Compte\Index.cshtml.g.cs
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Canal\AjouterCanal.cshtml.g.cs
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Canal\CanalPublication.cshtml.g.cs
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Canal\Index.cshtml.g.cs
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Compte\MonCompte.cshtml.g.cs
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Publication\Index.cshtml.g.cs
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Publication\Publication.cshtml.g.cs
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using ProjetFilRouge_AspNET.Classes;
 using ProjetFilRouge_AspNET.Models;
 using System;
@@ -46,18 +48,21 @@ namespace ProjetFilRouge_AspNET.Controllers
             {
                 messageError = "Les mots de passe ne correspondent pas !";
             }
-            else if (Tools.IsMdp(Password1))
+            else if (Tools.IsMdp(Password1)==false)
             {
-                messageError = "Le mot de passe doit commencer par une Majuscule et terminer par des chiffres !";
+                messageError = "Le mot de passe doit commencer par une Majuscule et terminer par des chiffres et doit comporter 8 caractères minimium !";
             }
             else
             {
                 utilisateur.MotDePasse = Password1;
                 if (utilisateur.Add())
                 {
+                    HttpContext.Session.SetString("IdUtilisateur", JsonConvert.SerializeObject(utilisateur.Id));
+
                     return RedirectToAction("Index", "Home", new
                     {
                         message = $"Votre compte à bien été créé, veuillez patienter qu'un administrateur active votre compte"
+
                     });
                 }
                 else

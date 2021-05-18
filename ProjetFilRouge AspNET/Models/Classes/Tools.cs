@@ -1,4 +1,6 @@
-﻿using System.Text.RegularExpressions;
+﻿using Microsoft.AspNetCore.Http;
+using System;
+using System.Text.RegularExpressions;
 
 namespace ProjetFilRouge_AspNET.Classes
 {
@@ -18,7 +20,7 @@ namespace ProjetFilRouge_AspNET.Classes
 
         public static bool IsMdp(string text)
         {
-            string pathern = @"^[A-Z][A-z-._]+[0-8]+$";
+            string pathern = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$";
             return Regex.IsMatch(text, pathern);
         }
 

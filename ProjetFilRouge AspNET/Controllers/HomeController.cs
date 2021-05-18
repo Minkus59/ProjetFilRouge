@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using ProjetFilRouge_AspNET.Models;
 using System;
 using System.Collections.Generic;
@@ -18,8 +20,17 @@ namespace ProjetFilRouge_AspNET.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string message)
         {
+            string chaineSession = HttpContext.Session.GetString("IdUtilisateur");
+            if (chaineSession != null)
+            {
+                int iD = Convert.ToInt32(chaineSession);
+                ViewBag.connectionId = iD;
+                ViewBag.connection = true;
+            }
+            
+            ViewBag.message = message;
             return View();
         }
 

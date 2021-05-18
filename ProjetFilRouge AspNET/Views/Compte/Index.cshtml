@@ -4,18 +4,10 @@
 
 @model Utilisateur
 
-@if (ViewBag.message != null)
-{
-    <div class="row m-1 justify-content-center align-items-center">
-        <div class="col-6 alert alert-success p-1">
-            @ViewBag.message
-        </div>
-    </div>
-}
 @if (ViewBag.messageError != null)
 {
     <div class="row m-1 justify-content-center align-items-center">
-        <div class="col-6 alert alert-danger p-1">
+        <div class="col alert alert-danger p-1">
             @ViewBag.messageError
         </div>
     </div>
