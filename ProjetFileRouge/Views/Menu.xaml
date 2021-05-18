@@ -1,0 +1,151 @@
+﻿<Window x:Class="ProjetFileRouge.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjetFileRouge"
+        mc:Ignorable="d"
+        Title="Projet Fil Rouge"  Width="1620" Height="770" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="#FF212121">
+        <ScrollViewer HorizontalScrollBarVisibility="Auto">
+            <StackPanel>
+                <StackPanel>
+                    <Menu Foreground="White" Background="#FF007EFF">
+                        <MenuItem Header="Quitter" Click="Quitter"/>
+                        <MenuItem Header="About" Click="About"/>
+                    </Menu>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal">
+                    <GroupBox Header="Utilisateur" Margin="10,10,10,3" Foreground="#FF0080FF" Width="960">
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Width="200" Margin="10,0,0,0">
+                                <StackPanel>
+                                    <Label Content="Pseudo" Foreground="White"></Label>
+                                    <TextBox x:Name="Pseudo" Text="{Binding Pseudo}"></TextBox>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Label Content="Mot de passe" Foreground="White"></Label>
+                                    <TextBox x:Name="MotDePasse" Text="{Binding MotDePasse}"></TextBox>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Label Content="Nom" Foreground="White"></Label>
+                                    <TextBox x:Name="Nom" Text="{Binding Nom}"></TextBox>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Label Content="Prenom" Foreground="White"></Label>
+                                    <TextBox x:Name="Prenom" Text="{Binding Prenom}"></TextBox>
+                                </StackPanel>
+                                <StackPanel>
+                                    <Label Content="Email" Foreground="White"></Label>
+                                    <TextBox x:Name="Email" Text="{Binding Email}"></TextBox>
+                                </StackPanel>
+                                <StackPanel Orientation="Vertical">
+                                    <Label Content="Activer le compte" Foreground="White"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <RadioButton GroupName="Actif" Content="Oui" IsChecked="{Binding ActifIsOui}" Margin="0 0 10 0" Foreground="White"></RadioButton>
+                                        <RadioButton GroupName="Actif" Content="Non" IsChecked="{Binding ActifIsNon}" Margin="0 0 10 0" Foreground="White"></RadioButton>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Orientation="Vertical">
+                                    <Label Content="Administrateur" Foreground="White"/>
+                                    <StackPanel Orientation="Horizontal">
+                                        <RadioButton GroupName="Administrateur" Content="Oui" IsChecked="{Binding AdministrateurIsOui}" Margin="0 0 10 0" Foreground="White"></RadioButton>
+                                        <RadioButton GroupName="Administrateur" Content="Non" IsChecked="{Binding AdministrateurIsNon}" Margin="0 0 10 0" Foreground="White"></RadioButton>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Command="{Binding ValidUtilisateur}"  Content="{Binding UtilisateurButton}" Width="100" Margin="0,10,0,0" Background="White" Foreground="#FF007DFF"/>
+                                    <Button Command="{Binding SupprimerUtilisateur}" Width="100" Content="Supprimer" Foreground="White" Background="#FF007DFF" Margin="0,10,0,0"/>
+                                </StackPanel>
+                            <Button Command="{Binding AnnulerUtilisateur}"  Content="Annuler" Foreground="White" Background="#FF007DFF" Margin="0,10,0,0"/>
+                        </StackPanel>
+
+                            <StackPanel Margin="20,0,0,0">
+                                <ListView ScrollViewer.VerticalScrollBarVisibility="Visible" ItemsSource="{Binding ListUtilisateurs}" SelectedItem="{Binding Utilisateur}" Height="360" Background="#FF363636" Foreground="OrangeRed">
+                                    <ListView.View>
+                                        <GridView>
+                                            <GridViewColumn Width="50" Header="Avatar" DisplayMemberBinding="{Binding Avatar}"/>
+                                            <GridViewColumn Width="60" Header="Pseudo" DisplayMemberBinding="{Binding Pseudo}"/>
+                                            <GridViewColumn Width="80" Header="Mot de passe" DisplayMemberBinding="{Binding MotDePasse}"/>
+                                            <GridViewColumn Width="80" Header="Nom" DisplayMemberBinding="{Binding Nom}"/>
+                                            <GridViewColumn Width="80" Header="Prénom" DisplayMemberBinding="{Binding Prenom}"/>
+                                            <GridViewColumn Width="140" Header="Email" DisplayMemberBinding="{Binding Email}"/>
+                                            <GridViewColumn Width="130" Header="Date création" DisplayMemberBinding="{Binding DateCreation}"/>
+                                            <GridViewColumn Width="40" Header="Actif" DisplayMemberBinding="{Binding Actif}"/>
+                                            <GridViewColumn Width="50" Header="Admin" DisplayMemberBinding="{Binding Administrateur}"/>
+                                        </GridView>
+                                    </ListView.View>
+                                </ListView>
+                            </StackPanel>
+                        </StackPanel>
+                    </GroupBox>
+
+                    <StackPanel Width="600">
+                        <GroupBox Header="Canaux" Foreground="#FF007DFF" Margin="10,10,10,0">
+                            <StackPanel>
+                                <ListView x:Name="ListCanaux" ScrollViewer.VerticalScrollBarVisibility="Visible" ItemsSource="{Binding ListCanaux}" SelectedItem="{Binding Canal}" Height="340" Background="#FF363636" Foreground="OrangeRed">
+                                    <ListView.View>
+                                        <GridView>
+                                            <GridViewColumn Width="50" Header="Id" DisplayMemberBinding="{Binding CanalId}"/>
+                                            <GridViewColumn Width="100" Header="Thème" DisplayMemberBinding="{Binding Theme}"/>
+                                            <GridViewColumn Width="200" Header="Description" DisplayMemberBinding="{Binding Description}"/>
+                                            <GridViewColumn Width="130" Header="Date de création" DisplayMemberBinding="{Binding CanalDateCreation}"/>
+                                            <GridViewColumn Width="50" Header="Actif" DisplayMemberBinding="{Binding CanalActif}"/>
+                                        </GridView>
+                                    </ListView.View>
+                                </ListView>
+                            </StackPanel>
+                        </GroupBox>
+                        <StackPanel Orientation="Horizontal" Margin="10,0,10,0">
+                            <Button Command="{Binding ActiverCanal}"  Content="Activer" Width="290" Background="White" Foreground="#FF007DFF"/>
+                            <Button Command="{Binding DesactiverCanal}" Width="290" Content="Desactiver" Foreground="White" Background="#FF007DFF"/>
+                        </StackPanel>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel>
+                    <GroupBox Header="Publication" Foreground="#FF007DFF" Margin="10,10,10,0">
+                        <StackPanel Orientation="Horizontal">
+                            
+                            <StackPanel>
+                                <StackPanel Width="400" Height="260" Margin="10,0,0,0">
+                                    <StackPanel>
+                                        <Label Content="Contenu" Foreground="White"></Label>
+                                        <TextBox x:Name="Contenu" Text="{Binding Contenu}" Height="160" TextWrapping="Wrap" AcceptsReturn="True"></TextBox>
+                                    </StackPanel>
+                       
+                                    <StackPanel Orientation="Horizontal">
+                                            <Button Command="{Binding ModifierPublication}"  Content="Modifier" Width="200" Margin="0,10,0,0" Background="White" Foreground="#FF007DFF"/>
+                                            <Button Command="{Binding SupprimerPublication}" Width="200" Content="Supprimer" Foreground="White" Background="#FF007DFF" Margin="0,10,0,0"/>
+                                    </StackPanel>
+                                    <Button Command="{Binding AnnulerPublication}"  Content="Annuler" Foreground="White" Background="#FF007DFF" Margin="0,10,0,0"/>
+                                </StackPanel>
+                            </StackPanel>
+
+                            <StackPanel Width="1120"  Margin="20,0,0,0">
+                            <ListView ScrollViewer.VerticalScrollBarVisibility="Visible" ItemsSource="{Binding ListPublications}" SelectedItem="{Binding Publication}" Height="250" Background="#FF363636" Foreground="OrangeRed">
+                                <ListView.View>
+                                    <GridView>
+                                        <GridViewColumn Width="50" Header="Id" DisplayMemberBinding="{Binding PublicationId}"/>
+                                        <GridViewColumn Width="850" Header="Publication" DisplayMemberBinding="{Binding Contenu}"/>
+                                        <GridViewColumn Width="130" Header="Date de création" DisplayMemberBinding="{Binding PublicationDateCreation}"/>
+                                        <GridViewColumn Width="50" Header="Actif" DisplayMemberBinding="{Binding PublicationActif}"/>
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <Button Command="{Binding ActiverPublication}"  Content="Activer" Width="560" Background="White" Foreground="#FF007DFF"/>
+                                    <Button Command="{Binding DesactiverPublication}" Width="560" Content="Desactiver" Foreground="White" Background="#FF007DFF"/>
+                                </StackPanel>
+                            </StackPanel>
+                            </StackPanel>
+                        </GroupBox>
+
+                </StackPanel>
+            
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>
