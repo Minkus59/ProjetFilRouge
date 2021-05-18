@@ -1,0 +1,62 @@
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge.csprojAssemblyReference.cache
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\Views\Menu.g.cs
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge_MarkupCompile.cache
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge_MarkupCompile.lref
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\ProjetFileRouge.exe
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\ProjetFileRouge.deps.json
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\ProjetFileRouge.runtimeconfig.json
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\ProjetFileRouge.runtimeconfig.dev.json
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\ProjetFileRouge.dll
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\ProjetFileRouge.pdb
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Extras.dll
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Platform.dll
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.dll
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\System.Windows.Interactivity.dll
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\Views\Menu.baml
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge.g.resources
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge.AssemblyInfoInputs.cache
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge.AssemblyInfo.cs
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge.csproj.CoreCompileInputs.cache
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge.csproj.CopyComplete
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge.dll
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge.pdb
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge.genruntimeconfig.cache
+C:\Users\Minku\source\repos\Projet File Rouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\ProjetFileRouge.exe
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\ProjetFileRouge.deps.json
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\ProjetFileRouge.runtimeconfig.json
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\ProjetFileRouge.runtimeconfig.dev.json
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\ProjetFileRouge.dll
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\ProjetFileRouge.pdb
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Extras.dll
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.Platform.dll
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\GalaSoft.MvvmLight.dll
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\System.Windows.Interactivity.dll
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge.csprojAssemblyReference.cache
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\Views\Menu.g.cs
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\App.g.cs
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge_MarkupCompile.cache
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge_MarkupCompile.lref
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\Views\Menu.baml
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge.g.resources
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge.AssemblyInfoInputs.cache
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge.AssemblyInfo.cs
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge.csproj.CoreCompileInputs.cache
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge.csproj.CopyComplete
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge.dll
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge.pdb
+D:\C# Formation\Solution\FilRouge\ProjetFileRouge\obj\Debug\netcoreapp3.1\ProjetFileRouge.genruntimeconfig.cache
