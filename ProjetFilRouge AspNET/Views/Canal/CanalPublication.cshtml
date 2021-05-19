@@ -2,6 +2,7 @@
 {
     Layout = "_LayoutConnecter";
 }
+ @model List<Publication>
 
 @if (ViewBag.messageError != null)
 {
@@ -13,3 +14,32 @@
 }
 
 <h1>Liste des publication du canal selectionné</h1>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Contenu</th>
+            <th scope="col">Date de création</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    @foreach (Publication p in Model)
+    {
+        <tbody>
+            <tr>
+                <th scope="row">@p.PublicationId</th>
+                <td>@p.Contenu</td>
+                <td>@p.PublicationDateCreation</td>
+                <td>
+                    @*@if (p.CanalIdUtilisateur == ViewBag.connectionId)
+                    {
+                        <a class="nav-link text-dark" asp-controller="Canal" asp-action="AjouterCanal" asp-route-id="@p.CanalId">Modifier</a>
+                        <a class="nav-link text-dark" asp-controller="Canal" asp-action="Confirmation" asp-route-id="@p.CanalId">Supprimer</a>
+                    }*@
+                </td>
+            </tr>
+
+        </tbody>
+    }
+</table>

@@ -10,7 +10,6 @@ namespace ProjetFilRouge_AspNET.Controllers
 {
     public class CanalController : Controller
     {
-        // GET: CanalController
         public ActionResult Index()
         {
             string chaineSession = HttpContext.Session.GetString("IdUtilisateur");
@@ -30,7 +29,6 @@ namespace ProjetFilRouge_AspNET.Controllers
             return View(liste);
         }
 
-        // GET: CanalController/Details/5
         public ActionResult CanalPublication(int id)
         {
             string chaineSession = HttpContext.Session.GetString("IdUtilisateur");
@@ -45,10 +43,11 @@ namespace ProjetFilRouge_AspNET.Controllers
                 return RedirectToAction("Index", "Home", new { messageError = "Vous devez être connecté pour accéder à cette page" });
             }
 
-            return View();
+            List<Publication> publication = Publication.Find(id);
+
+            return View(publication);
         }
 
-        // GET: CanalController/Create
         public ActionResult AjouterCanal(Canal canal, string message, string messageError, int id)
         {
             string chaineSession = HttpContext.Session.GetString("IdUtilisateur");

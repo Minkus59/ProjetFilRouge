@@ -27,6 +27,32 @@ namespace ProjetFilRouge_AspNET.Models
         public int PublicationActif { get => publicationActif; set => publicationActif = value; }
         public string Contenu { get => contenu; set => contenu = value; }
 
+        public static List<Publication> Find(int idCanal)
+        {
+            List<Publication> listPublication = new List<Publication>();
+            string Request = "SELECT id, contenu, DateCreation FROM Publication WHERE IdCanal = @IdCanal AND actif = 1";
+            SqlConnection Connection = Bdd.Cnx;
+            SqlCommand Command = new SqlCommand(Request, Connection);
+            Command.Parameters.Add(new SqlParameter("@IdCanal", idCanal));
+            Connection.Open();
+            SqlDataReader reader = Command.ExecuteReader();
+            while (reader.Read())
+            {
+                Publication p = new Publication
+                {
+                    PublicationId = reader.GetInt32(0),
+                    Contenu = reader.GetString(1),
+                    publicationDateCreation = reader.GetDateTime(2)
+                };
+                listPublication.Add(p);
+            }
+
+            Command.Dispose();
+            Connection.Close();
+
+            return listPublication;
+        }
+
         public bool Update()
         {
             AbstractDAO<Publication> dao = new PublicationDAO();
