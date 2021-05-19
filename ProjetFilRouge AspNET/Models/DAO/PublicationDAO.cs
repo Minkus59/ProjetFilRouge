@@ -75,8 +75,7 @@ namespace ProjetFilRouge_AspNET.DAO
             connection.Close();
             return publication;
         }
-
-        public override List<Publication> Find(Publication element)
+        public override List<Publication> Find(int index)
         {
             throw new NotImplementedException();
         }

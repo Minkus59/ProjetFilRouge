@@ -1,3 +1,15 @@
-﻿
+﻿@if (ViewBag.connection == true)
+{
+    Layout = "_LayoutConnecter";
+}
+
+@if (ViewBag.messageError != null)
+{
+    <div class="row m-1 justify-content-center align-items-center">
+        <div class="col alert alert-danger p-1">
+            @ViewBag.messageError
+        </div>
+    </div>
+}
 
 <h1>Liste des publication du canal selectionné</h1>

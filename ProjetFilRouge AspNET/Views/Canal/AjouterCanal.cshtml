@@ -1,3 +1,55 @@
-﻿
+﻿@if (ViewBag.connection == true)
+{
+    Layout = "_LayoutConnecter";
+}
+@model Canal
 
-<h1>Créer un canal de discution</h1>
+@if (ViewBag.messageError != null)
+{
+    <div class="row m-1 justify-content-center align-items-center">
+        <div class="col alert alert-danger p-1">
+            @ViewBag.messageError
+        </div>
+    </div>
+}
+
+@if (ViewBag.message != null)
+{
+    <div class="row m-1 justify-content-center align-items-center">
+        <div class="col alert alert-success p-1">
+            @ViewBag.message
+        </div>
+    </div>
+}
+
+@if (Model == null)
+{
+    <h1>Créer un canal de discution</h1>
+
+    <form asp-controller="Canal" asp-action="SubmitCanal" method="post">
+        <input type="hidden" name="CanalIdUtilisateur" value="@ViewBag.connectionId" />
+        <div class="form-group">
+            <input type="text" asp-for="@Model.Theme" name="Theme" class="col form-control p-1" placeholder="Thème du canal" />
+        </div>
+        <div class="form-group">
+            <input type="text" asp-for="@Model.Description" name="Description" class="col form-control p-1" placeholder="Description" />
+        </div>
+        <button type="submit" class="col-2 btn btn-secondary">Ajouter</button>
+    </form>
+}
+else
+{
+    <h1>Modifier le canal de discution @Model.CanalId</h1>
+
+    <form asp-controller="Canal" asp-action="ModifierCanal" method="post">
+        <input type="hidden" name="CanalIdUtilisateur" value="@ViewBag.connectionId" />
+        <input type="hidden" name="CanalId" asp-for="@Model.CanalId" />
+        <div class="form-group">
+            <input type="text" asp-for="@Model.Theme" name="Theme" class="col form-control p-1" placeholder="Thème du canal" />
+        </div>
+        <div class="form-group">
+            <input type="text" asp-for="@Model.Description" name="Description" class="col form-control p-1" placeholder="Description" />
+        </div>
+        <button type="submit" class="col-2 btn btn-secondary">Modifier</button>
+    </form>
+}

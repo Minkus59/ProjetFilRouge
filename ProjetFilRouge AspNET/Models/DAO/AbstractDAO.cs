@@ -18,7 +18,7 @@ namespace ProjetFilRouge_AspNET.DAO
 
         public abstract bool Update(T element); 
 
-        public abstract List<T> Find(T element);
+        public abstract List<T> Find(int index);
         public abstract List<T> Find(Func<T, bool> criteria);
 
         public abstract List<T> FindAll();

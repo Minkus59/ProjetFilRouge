@@ -91,7 +91,7 @@ namespace ProjetFilRouge_AspNET.DAO
             return nbRow == 1;
         }
 
-        public override List<Utilisateur> Find(Utilisateur element)
+        public override List<Utilisateur> Find(int index)
         {
             throw new NotImplementedException();
         }

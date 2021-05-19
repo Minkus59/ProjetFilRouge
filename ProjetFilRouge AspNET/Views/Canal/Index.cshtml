@@ -1,3 +1,125 @@
-﻿
+﻿@if (ViewBag.connection == true)
+{
+    Layout = "_LayoutConnecter";
+}
+@model List<Canal>
+
+@if (ViewBag.messageError != null)
+{
+    <div class="row m-1 justify-content-center align-items-center">
+        <div class="col alert alert-danger p-1">
+            @ViewBag.messageError
+        </div>
+    </div>
+}
 
 <h1>Liste des canaux de discution</h1>
+
+@if (ViewBag.recherche == null)
+{
+    if (Model == null)
+    {
+        <div class="row">
+            <div class="col alert alert-danger">
+                Aucun Canal actif trouvé
+            </div>
+        </div>
+        <div class="row">
+            <a asp-controller="Canal" asp-action="Index" class="btn btn-secondary col">Retour</a>
+        </div>
+    }
+    else
+    {
+        <form class="row m-1" asp-controller="Canal" asp-action="SubmitRecherche" method="get">
+            <input type="text" name="search" placeholder="Votre recherche..." class="col-9 p-1 form-control" />
+            <button type="submit" class="btn btn-warning p-1 col-3">Rechercher</button>
+        </form>
+
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Thème</th>
+                    <th scope="col">Desciption</th>
+                    <th scope="col">Date de création</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            @foreach (Canal p in Model)
+            {
+                <tbody>
+                    <tr>
+                        <th scope="row">@p.CanalId</th>
+                        <td>@p.Theme</td>
+                        <td>@p.Description</td>
+                        <td>@p.CanalDateCreation</td>
+                        <td>
+                            <a class="nav-link text-dark" asp-controller="Canal" asp-action="CanalPublication" asp-route-id="@p.CanalId">Afficher</a>
+                            @if (p.CanalIdUtilisateur == ViewBag.connectionId)
+                            {
+                                <a class="nav-link text-dark" asp-controller="Canal" asp-action="AjouterCanal" asp-route-id="@p.CanalId">Modifier</a>
+                                <a class="nav-link text-dark" asp-controller="Canal" asp-action="Confirmation" asp-route-id="@p.CanalId">Supprimer</a>
+                            }
+                        </td>
+                    </tr>
+
+                </tbody>
+            }
+        </table>
+    }
+}
+else
+{
+    if (ViewBag.recherche == null)
+    {
+        <div class="row">
+            <div class="col alert alert-danger">
+                Aucun Canal actif trouvé
+            </div>
+        </div>
+        <div class="row">
+            <a asp-controller="Canal" asp-action="Index" class="btn btn-secondary col">Retour</a>
+        </div>
+    }
+    else
+    {
+        <form class="row m-1" asp-controller="Canal" asp-action="SubmitRecherche" method="get">
+            <input type="text" name="search" placeholder="Votre recherche..." class="col-9 p-1 form-control" />
+            <button type="submit" class="btn btn-warning p-1 col-3">Rechercher</button>
+        </form>
+
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Thème</th>
+                    <th scope="col">Desciption</th>
+                    <th scope="col">Date de création</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            @foreach (Canal canal in ViewBag.recherche)
+            {
+                <tbody>
+                    <tr>
+                        <th scope="row">@canal.CanalId</th>
+                        <td>@canal.Theme</td>
+                        <td>@canal.Description</td>
+                        <td>@canal.CanalDateCreation</td>
+                        <td>
+                            <a class="nav-link text-dark" asp-controller="Canal" asp-action="CanalPublication" asp-route-id="@canal.CanalId">Afficher</a>
+                            @if (canal.CanalIdUtilisateur == ViewBag.connectionId)
+                            {
+                                <a class="nav-link text-dark" asp-controller="Canal" asp-action="AjouterCanal" asp-route-id="@canal.CanalId">Modifier</a>
+                                <a class="nav-link text-dark" asp-controller="Canal" asp-action="Confirmation" asp-route-id="@canal.CanalId">Supprimer</a>
+                            }
+                        </td>
+                    </tr>
+                </tbody>
+            }
+        </table>
+        <div class="row">
+            <a asp-controller="Canal" asp-action="Index" class="btn btn-secondary col">Retour</a>
+        </div>
+    }
+}

@@ -27,12 +27,6 @@ namespace ProjetFilRouge_AspNET.Models
         public int PublicationActif { get => publicationActif; set => publicationActif = value; }
         public string Contenu { get => contenu; set => contenu = value; }
 
-        public List<Publication> Find(Canal element)
-        {
-            AbstractDAO<Publication> dao = new PublicationDAO();
-            return dao.Find(this);
-        }
-
         public bool Update()
         {
             AbstractDAO<Publication> dao = new PublicationDAO();

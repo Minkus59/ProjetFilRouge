@@ -48,3 +48,5 @@ D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Publication\Index.cshtml.g.cs
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Publication\Publication.cshtml.g.cs
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutConnecter.cshtml.g.cs
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Canal\Confirmation.cshtml.g.cs

@@ -1,0 +1,5 @@
+﻿@model Canal
+<div>Etes-vous sur de voiloir supprimer ce canal ?</div>
+
+<span><a asp-controller="Canal" asp-action="Supprimer" class="btn btn-secondary col" asp-route-id="@Model.CanalId">Oui</a></span>
+<span><a asp-controller="Canal" asp-action="Index" class="btn btn-secondary col">Non</a></span>

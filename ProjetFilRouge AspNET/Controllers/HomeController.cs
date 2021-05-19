@@ -20,7 +20,7 @@ namespace ProjetFilRouge_AspNET.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index(string message)
+        public IActionResult Index(string message, string messageError)
         {
             string chaineSession = HttpContext.Session.GetString("IdUtilisateur");
             if (chaineSession != null)
@@ -29,7 +29,8 @@ namespace ProjetFilRouge_AspNET.Controllers
                 ViewBag.connectionId = iD;
                 ViewBag.connection = true;
             }
-            
+
+            ViewBag.messageError = messageError;
             ViewBag.message = message;
             return View();
         }

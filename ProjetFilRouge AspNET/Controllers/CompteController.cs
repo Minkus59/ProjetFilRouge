@@ -25,8 +25,48 @@ namespace ProjetFilRouge_AspNET.Controllers
         {
             return View();
         }
+        public IActionResult MonCompte()
+        {
+            string chaineSession = HttpContext.Session.GetString("IdUtilisateur");
+            if (chaineSession != null)
+            {
+                int iD = Convert.ToInt32(chaineSession);
+                ViewBag.connectionId = iD;
+                ViewBag.connection = true;
+            }
+            else
+            {
+                return RedirectToAction("Index", "Home", new { messageError = "Vous devez être connecté pour accéder à cette page" });
+            }
+            return View();
+        }
         public IActionResult Connexion(Utilisateur utilisateur)
         {
+            string messageError;
+            Utilisateur util = Utilisateur.VerifCompteActif(utilisateur);
+            //Verif couple email mdp
+
+            if (util != null)
+            {
+                if (util.Actif == 1)
+                {
+                    HttpContext.Session.SetString("IdUtilisateur", JsonConvert.SerializeObject(util.Id));
+
+                    return RedirectToAction("Index", "Home", new
+                    {
+                        message = $"Connection réussie"
+                    });
+                }
+                else
+                {
+                    messageError = "Votre compte n'a pas été activé par l'administrateur, veuillez rééssayer ultérieurement";
+                }
+            }
+            else
+            {
+                messageError = "Le mot de passe ne correspond pas à cette adresse email";
+            }
+            ViewBag.messageError = messageError;
             return View("Index");
         }
         public IActionResult Inscription(Utilisateur utilisateur, string Password1, string Password2)
@@ -57,8 +97,6 @@ namespace ProjetFilRouge_AspNET.Controllers
                 utilisateur.MotDePasse = Password1;
                 if (utilisateur.Add())
                 {
-                    HttpContext.Session.SetString("IdUtilisateur", JsonConvert.SerializeObject(utilisateur.Id));
-
                     return RedirectToAction("Index", "Home", new
                     {
                         message = $"Votre compte à bien été créé, veuillez patienter qu'un administrateur active votre compte"
