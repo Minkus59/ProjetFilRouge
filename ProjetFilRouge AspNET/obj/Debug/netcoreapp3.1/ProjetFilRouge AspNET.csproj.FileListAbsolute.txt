@@ -1,9 +1,3 @@
-D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.AssemblyInfoInputs.cache
-D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.AssemblyInfo.cs
-D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.csproj.CoreCompileInputs.cache
-D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.MvcApplicationPartsAssemblyInfo.cache
-D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.RazorAssemblyInfo.cache
-D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.RazorAssemblyInfo.cs
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\bin\Debug\netcoreapp3.1\appsettings.json
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\bin\Debug\netcoreapp3.1\ProjetFilRouge AspNET.exe
@@ -14,21 +8,38 @@ D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\bin\Debug\netcoreapp3.1\
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\bin\Debug\netcoreapp3.1\ProjetFilRouge AspNET.pdb
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\bin\Debug\netcoreapp3.1\ProjetFilRouge AspNET.Views.dll
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\bin\Debug\netcoreapp3.1\ProjetFilRouge AspNET.Views.pdb
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.csproj.AssemblyReference.cache
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.AssemblyInfoInputs.cache
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.AssemblyInfo.cs
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.csproj.CoreCompileInputs.cache
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.MvcApplicationPartsAssemblyInfo.cache
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.RazorAssemblyInfo.cache
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.RazorAssemblyInfo.cs
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\staticwebassets\ProjetFilRouge AspNET.StaticWebAssets.Manifest.cache
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\staticwebassets\ProjetFilRouge AspNET.StaticWebAssets.xml
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\scopedcss\bundle\ProjetFilRouge AspNET.styles.css
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.TagHelpers.input.cache
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.TagHelpers.output.cache
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.RazorCoreGenerate.cache
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Canal\AjouterCanal.cshtml.g.cs
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Canal\CanalPublication.cshtml.g.cs
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Canal\Confirmation.cshtml.g.cs
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Canal\Index.cshtml.g.cs
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Compte\Index.cshtml.g.cs
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Compte\MonCompte.cshtml.g.cs
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Publication\Index.cshtml.g.cs
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Publication\Publier.cshtml.g.cs
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutConnecter.cshtml.g.cs
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
@@ -39,14 +50,3 @@ D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.dll
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.pdb
 D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.genruntimeconfig.cache
-D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Compte\Index.cshtml.g.cs
-D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Canal\AjouterCanal.cshtml.g.cs
-D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Canal\CanalPublication.cshtml.g.cs
-D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Canal\Index.cshtml.g.cs
-D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Compte\MonCompte.cshtml.g.cs
-D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Publication\Index.cshtml.g.cs
-D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutConnecter.cshtml.g.cs
-D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Canal\Confirmation.cshtml.g.cs
-D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\Razor\Views\Publication\Publier.cshtml.g.cs
-D:\C# Formation\Solution\FilRouge\ProjetFilRouge AspNET\obj\Debug\netcoreapp3.1\ProjetFilRouge AspNET.csproj.AssemblyReference.cache
