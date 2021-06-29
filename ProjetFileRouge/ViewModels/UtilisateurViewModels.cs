@@ -33,7 +33,6 @@ namespace ProjetFileRouge.ViewModels
         #region Utilisateur
         private Utilisateur utilisateur;
         private string utilisateurButton;
-        public string UtilisateurButton { get => Utilisateur.Id > 0 ? "Modifier" : "Ajouter"; }
 
         public int Id { get => Utilisateur.Id; set => Utilisateur.Id = value; }
 
@@ -220,7 +219,7 @@ namespace ProjetFileRouge.ViewModels
                     RaisePropertyChanged("Prenom");
                     RaisePropertyChanged("Email");
                     RaisePropertyChanged("MotDePasse");
-                    RaisePropertyChanged("ContentButton");
+                    RaisePropertyChanged("UtilisateurButton");
 
                     if (utilisateur != null)
                     {
@@ -244,6 +243,7 @@ namespace ProjetFileRouge.ViewModels
         public ICommand ValidUtilisateur { get; set; }
         public ICommand AnnulerUtilisateur { get; set; }
         public ICommand SupprimerUtilisateur { get; set; }
+        public string UtilisateurButton { get => Utilisateur.Id > 0 ? "Modifier" : "Ajouter"; }
 
         public void ActionAnnulerUtilisateur()
         {

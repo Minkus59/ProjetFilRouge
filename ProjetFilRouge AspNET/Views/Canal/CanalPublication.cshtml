@@ -2,7 +2,7 @@
 {
     Layout = "_LayoutConnecter";
 }
- @model List<Publication>
+@model Canal
 
 @if (ViewBag.messageError != null)
 {
@@ -13,7 +13,7 @@
     </div>
 }
 
-<h1>Liste des publication du canal selectionné</h1>
+<h1>Liste des publication du canal @Model.Theme</h1>
 
 <table class="table">
     <thead class="thead-dark">
@@ -21,25 +21,27 @@
             <th scope="col">#</th>
             <th scope="col">Contenu</th>
             <th scope="col">Date de création</th>
-            <th scope="col">Action</th>
         </tr>
     </thead>
-    @foreach (Publication p in Model)
+    @foreach (Publication p in Model.ListPublication)
     {
         <tbody>
             <tr>
                 <th scope="row">@p.PublicationId</th>
                 <td>@p.Contenu</td>
                 <td>@p.PublicationDateCreation</td>
-                <td>
-                    @*@if (p.CanalIdUtilisateur == ViewBag.connectionId)
-                    {
-                        <a class="nav-link text-dark" asp-controller="Canal" asp-action="AjouterCanal" asp-route-id="@p.CanalId">Modifier</a>
-                        <a class="nav-link text-dark" asp-controller="Canal" asp-action="Confirmation" asp-route-id="@p.CanalId">Supprimer</a>
-                    }*@
-                </td>
             </tr>
-
         </tbody>
     }
+
 </table>
+
+<div>
+    <form asp-controller="Publication" asp-action="SubmitPublication" method="post">
+        <input type="hidden" name="idCanal" value="@Model.CanalId" />
+        <div class="form-group">
+            <textarea name="Contenu" class="col form-control p-1" placeholder="Ecrire une publication"></textarea>
+        </div>
+        <button type="submit" class="col-2 btn btn-secondary">Publier</button>
+    </form>
+</div>

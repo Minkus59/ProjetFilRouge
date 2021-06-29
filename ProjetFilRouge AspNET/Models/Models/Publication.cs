@@ -14,6 +14,7 @@ namespace ProjetFilRouge_AspNET.Models
         private int idCanal;
         private int idUtilisateur;
         private int publicationActif;
+        private List<Canal> listCanal;
 
         public Publication()
         {
@@ -27,10 +28,28 @@ namespace ProjetFilRouge_AspNET.Models
         public int PublicationActif { get => publicationActif; set => publicationActif = value; }
         public string Contenu { get => contenu; set => contenu = value; }
 
+        public static bool Create(Publication element)
+        {
+            string request = "INSERT INTO Publication (Contenu, DateCreation, idCanal) OUTPUT INSERTED.ID VALUES (@Contenu, @DateCreation, @idCanal)";
+            SqlConnection connection = Bdd.Cnx;
+            SqlCommand command = new SqlCommand(request, connection);
+            command.Parameters.Add(new SqlParameter("@Contenu", element.Contenu));
+            command.Parameters.Add(new SqlParameter("@DateCreation", element.publicationDateCreation));
+            command.Parameters.Add(new SqlParameter("@idCanal", element.idCanal));
+            connection.Open();
+            int Id = command.ExecuteNonQuery();
+            command.Dispose();
+            connection.Close();
+            if (Id > 0)
+                return true;
+            else
+                return false;
+        }
+
         public static List<Publication> Find(int idCanal)
         {
             List<Publication> listPublication = new List<Publication>();
-            string Request = "SELECT id, contenu, DateCreation FROM Publication WHERE IdCanal = @IdCanal AND actif = 1";
+            string Request = "SELECT p.id, p.contenu, p.DateCreation, c.idUtilisateur FROM Publication AS p INNER JOIN Canal AS c ON c.id = p.idCanal WHERE p.IdCanal = @IdCanal AND c.actif = 1";
             SqlConnection Connection = Bdd.Cnx;
             SqlCommand Command = new SqlCommand(Request, Connection);
             Command.Parameters.Add(new SqlParameter("@IdCanal", idCanal));
@@ -42,11 +61,11 @@ namespace ProjetFilRouge_AspNET.Models
                 {
                     PublicationId = reader.GetInt32(0),
                     Contenu = reader.GetString(1),
-                    publicationDateCreation = reader.GetDateTime(2)
+                    publicationDateCreation = reader.GetDateTime(2),
+                    idUtilisateur = reader.GetInt32(3)
                 };
                 listPublication.Add(p);
             }
-
             Command.Dispose();
             Connection.Close();
 

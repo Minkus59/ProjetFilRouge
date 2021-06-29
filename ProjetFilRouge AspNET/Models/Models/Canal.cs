@@ -15,6 +15,7 @@ namespace ProjetFilRouge_AspNET.Models
         private DateTime canalDateCreation;
         private int canalActif;
         private int canalIdUtilisateur;
+        private List<Publication> listPublication;
 
         public Canal()
         {
@@ -27,6 +28,7 @@ namespace ProjetFilRouge_AspNET.Models
         public DateTime CanalDateCreation { get => canalDateCreation; set => canalDateCreation = value; }
         public int CanalActif { get => canalActif; set => canalActif = value; }
         public int CanalIdUtilisateur { get => canalIdUtilisateur; set => canalIdUtilisateur = value; }
+        public List<Publication> ListPublication { get => listPublication; set => listPublication = value; }
 
         public static List<Canal> Recherche(string search)
         {
@@ -142,6 +144,9 @@ namespace ProjetFilRouge_AspNET.Models
             reader.Close();
             command.Dispose();
             connection.Close();
+
+            canal.listPublication = Publication.Find(id);
+
             return canal;
         }
 

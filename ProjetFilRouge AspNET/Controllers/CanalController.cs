@@ -43,9 +43,9 @@ namespace ProjetFilRouge_AspNET.Controllers
                 return RedirectToAction("Index", "Home", new { messageError = "Vous devez être connecté pour accéder à cette page" });
             }
 
-            List<Publication> publication = Publication.Find(id);
+            Canal canal = Canal.Find(id);
 
-            return View(publication);
+            return View(canal);
         }
 
         public ActionResult AjouterCanal(Canal canal, string message, string messageError, int id)
@@ -135,7 +135,6 @@ namespace ProjetFilRouge_AspNET.Controllers
             {
                 return RedirectToAction("Index", "Canal", new { messageError = @"Erreur de suppresion du canal : {Id}" });
             }
-            return View();
         }
     }
 }

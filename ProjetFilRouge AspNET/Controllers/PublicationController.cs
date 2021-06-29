@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ProjetFilRouge_AspNET.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +28,7 @@ namespace ProjetFilRouge_AspNET.Controllers
         }
 
         // GET: CanalController/Details/5
-        public ActionResult Publication(int id)
+        public ActionResult Publier(int id)
         {
             string chaineSession = HttpContext.Session.GetString("IdUtilisateur");
             if (chaineSession != null)
@@ -60,6 +61,18 @@ namespace ProjetFilRouge_AspNET.Controllers
             }
 
             return View();
+        }
+
+        public ActionResult SubmitPublication(Publication publication)
+        {
+            if (Publication.Create(publication))
+            {
+                return RedirectToAction("CanalPublication", "Canal", new { id = publication.IdCanal, message = "Publication ajoutée" });
+            }
+            else
+            {
+                return RedirectToAction("CanalPublication", "Canal", new { id = publication.IdCanal, messageError = "Echec de la création de la publication" });
+            }
         }
     }
 }
